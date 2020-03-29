@@ -4,18 +4,23 @@
 ### Review ###
 
 * Creating to-do list and adding some tasks
+
 ![](https://media.giphy.com/media/Y1AdQoaB34wk5Qa3XK/giphy.gif)
 
 * Marking task as done, filtering and deleting tasks
+
 ![](https://media.giphy.com/media/KetX9mxwm5LxKTPIUd/giphy.gif)
 
 * Importing to-do list from .json file
+
 ![](https://media.giphy.com/media/iE3x2X4iTlnRxX4DHf/giphy.gif)
 
 * Trying to import empty to-do list (nothing happens)
+
 ![](https://media.giphy.com/media/U71kDMRrwnl7ySpL2N/giphy.gif)
 
 * Importing a very large to-do list from .json file
+
 ![](https://media.giphy.com/media/frMhnIc58hYknTj0dk/giphy.gif)
 
 ### How to start ###
