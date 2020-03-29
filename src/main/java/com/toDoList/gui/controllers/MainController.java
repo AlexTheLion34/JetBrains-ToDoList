@@ -8,10 +8,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -52,9 +54,13 @@ public class MainController {
                 }
                 // go to next screen
                 Stage listStage = new Stage();
-                listStage.setScene(new Scene(root));
+                Scene scene = new Scene(root);
+                listStage.setScene(scene);
                 listStage.setTitle(name);
                 listStage.setResizable(false);
+                Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
+                listStage.setX(bounds.getMinX() + (bounds.getWidth() - scene.getWidth()) / 4);
+                listStage.setY(bounds.getMinY() + (bounds.getHeight() - scene.getHeight()) / 4);
                 listStage.show();
             } catch (IOException e) {
                 e.printStackTrace();
