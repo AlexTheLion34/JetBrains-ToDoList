@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="355.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.toDoList.gui.controllers.MainController">
+   <children>
+      <Pane prefHeight="355.0" prefWidth="552.0" style="-fx-background-color: #DADDE5 #DADDE5;">
+         <children>
+            <VBox alignment="CENTER" layoutX="7.0" prefHeight="355.0" prefWidth="260.0" spacing="10" style="-fx-background-color: #DADDE5;">
+               <children>
+                  <Button graphicTextGap="6.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4e69ab; -fx-background-radius: 10;" text="Create list  " textFill="#eeecec">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/create.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <TextField fx:id="listName" alignment="CENTER" promptText="Name" />
+                  <Button graphicTextGap="10.0" mnemonicParsing="false" onAction="#onImport" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #4e69ab; -fx-background-radius: 10;" text="Import list   " textFill="#fcfafa">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/import.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <TextField fx:id="path" alignment="CENTER" promptText="Path" />
+               </children>
+            </VBox>
+            <VBox layoutX="276.0" prefHeight="355.0" prefWidth="275.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="275.0" text="Your lists" textAlignment="CENTER" textFill="#4e69ab">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="lists" onMouseClicked="#onListItemClick" prefHeight="315.0" prefWidth="275.0" style="-fx-selection-bar: #4e69ab #4e69ab;" />
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
