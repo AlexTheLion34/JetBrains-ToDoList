@@ -30,3 +30,5 @@
 * `cd project directory/build/libs`
 * `java -jar JetBrains-ToDoList-1.0.jar`
 * or just download [jar here](https://drive.google.com/file/d/1i-6AH4lHoRDD46Uorxfjd1GnuuDOC3SH/view?usp=sharing)
+
+***Java 11 is recomended***
