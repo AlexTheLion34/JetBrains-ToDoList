@@ -23,6 +23,21 @@
 
 ![](https://media.giphy.com/media/frMhnIc58hYknTj0dk/giphy.gif)
 
+### JSON schema for todo-list ###
+```json
+{
+  "name": "Imported list",
+  "tasks": [
+    {
+      "text": "Imported task 1"
+    },
+    {
+      "text": "Imported task 2"
+    }
+  ]
+}
+```
+
 ### How to start ###
 * `git clone https://github.com/AlexTheLion34/JetBrains-ToDoList.git`
 * `cd (project directory)`
