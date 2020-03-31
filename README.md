@@ -19,7 +19,7 @@
 
 ![](https://media.giphy.com/media/U71kDMRrwnl7ySpL2N/giphy.gif)
 
-* Importing a very large to-do list from .json file
+* Importing a large to-do list from .json file
 
 ![](https://media.giphy.com/media/frMhnIc58hYknTj0dk/giphy.gif)
 
